@@ -1,16 +1,9 @@
-const express = require('express')
-const app = express()
+const express = require('express');
+const app = express();
+const router = require('./router/router')
 
-app.use(
-    express.urlencoded({
-        extended: true,
-    }),
-)
+app.use(router);
 
-app.use(express.json())
-
-app.get('/', (req, res) => {
-    res.json({message: 'Ola express'})
-})
-
-app.listen(3000)
+app.listen(3000, function(req, res){
+    console.log("Servidor rodando na porta 3000");
+});
