@@ -46,3 +46,20 @@ Não consegui fazer uma API Restfull nativamente como deve ser feita nos padrõe
 - Remover da lista de favoritos por username - DELETE: http://localhost:5500/users/(Username_do_Github)
 
     - Em caso de sucessso, remove o username digitado da lista.
+
+## Padrão de commits
+
+Foi utilizado o padrão Conventional Commits, sendo os mais usados:
+
+    - chore: Atualização de tarefas que não ocasionam alteração no código de produção, mas mudanças de ferramentas, mudanças de configuração e bibliotecas.
+
+    - feat: São adições de novas funcionalidades ou de quaisquer outras novas implantações ao código.
+
+    - refactor: Utilizado em quaisquer mudanças que sejam executados no código, porém não alterem a funcionalidade final da tarefa impactada.
+
+    - docs: Inclusão ou alteração somente de arquivos de documentação.
+
+## Creditos
+
+Essa API foi desenvolvida e documentada por Cleber Brant, no dia 08/06/2023, sendo que inicialmente em outro repositório, houve a tentativa de um projeto com mais qualidade em relação a Clean Architecture e Disign Patterns, porém, devido ao tempo, não foi possivel desta vez, porém, será continuado.
+link do outro repositório: https://github.com/Cleberbrant/puma-desafio
