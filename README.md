@@ -35,12 +35,12 @@ Não consegui fazer uma API Restfull nativamente como deve ser feita nos padrõe
 
 - Listagem dos favoritos - GET: http://localhost:5500/users/
 
-    . Em caso de sucesso, retorna todos os usuarios cadastrados com os respectivos parâmetros em formato JSON: (username, nome, avatar e url)
+    - Em caso de sucesso, retorna todos os usuarios cadastrados com os respectivos parâmetros em formato JSON: (username, nome, avatar e url)
 
-- Adicionar na lista de favoritos por username - POST: http://localhost:5500/users/(Username do Github)
+- Adicionar na lista de favoritos por username - POST: http://localhost:5500/users/(Username_do_Github)
 
-    . Em caso de sucesso, adiciona o username digitado na lista, capturando seus respectivos parâmetros em formato JSON: (username, nome, avatar e url)
+    - Em caso de sucesso, adiciona o username digitado na lista, capturando seus respectivos parâmetros em formato JSON: (username, nome, avatar e url)
 
-- Remover da lista de favoritos por username - DELETE: http://localhost:5500/users/(Username do Github)
+- Remover da lista de favoritos por username - DELETE: http://localhost:5500/users/(Username_do_Github)
 
-    . Em caso de sucessso, remove o username digitado da lista.
+    - Em caso de sucessso, remove o username digitado da lista.
