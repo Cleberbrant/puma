@@ -34,7 +34,8 @@ app.route('/users/:username').post((req, res) => {
 
   if(verificarUsername(users, userName) === false){
     if(users.length <= 5){
-        //const lastId = users[users.length + 1].id
+        
+        //estou acessando a api do git, dando um get com o username que recebi no parametro do meu post
         function usuarioGitHub(){
         return axios.get(`https://api.github.com/users/${userName}`)
         }
@@ -42,7 +43,6 @@ app.route('/users/:username').post((req, res) => {
         dados = usuarioGitHub();
 
         dados.then(function(resposta){
-            
             users.push({
                 username: resposta.data.login,
                 nome: resposta.data.name,
