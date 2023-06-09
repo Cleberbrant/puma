@@ -39,7 +39,9 @@ Não consegui fazer uma API Restfull nativamente como deve ser feita nos padrõe
 
 - Adicionar na lista de favoritos por username - POST: http://localhost:5500/users/(Username_do_Github)
 
-    - Em caso de sucesso, adiciona o username digitado na lista, capturando seus respectivos parâmetros em formato JSON: (username, nome, avatar e url)
+    - Em caso de sucesso, adiciona o username digitado na lista, com limite maximo de 5 usuarios, capturando seus respectivos parâmetros em formato JSON: (username, nome, avatar e url).
+
+    - Em caso de limite excedido é retornado erro.
 
 - Remover da lista de favoritos por username - DELETE: http://localhost:5500/users/(Username_do_Github)
 
